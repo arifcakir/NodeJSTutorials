@@ -5,5 +5,4 @@ console.log("event works " + param1);
 });
 
 myEventEmitter.emit("eventObject","Hello");
-
 myEventEmitter.emit("eventObject","Hi");
