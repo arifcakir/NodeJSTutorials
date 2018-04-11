@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	h1 Passport Kullanıcı Yetkilendirme
+	if (!user)
+		h2
+			a(href="/login") Giriş
+		h2
+			a(href="/register") Kayıt
+	if (user)
+		p #{user.username} kullanıcısı olarak giriş yaptınız
+	h2
+		a(href="/logout") Çıkış yap

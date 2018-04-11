@@ -1,0 +1,28 @@
+block content
+	section(id="login")
+		div.container
+			div.row
+				div.col-xs-12
+					form.form-horizontal(method="POST" action="/login")
+						div.form-group
+							label.col-sm-2.control-label(
+							for="inputUsername") Kullanıcı Adı
+							div.col-sm-10
+							input.form-control(
+							type="text" 
+							id="inputUsername"
+							name="username" 
+							placeholder="Kullanıcı Adı Girin")
+						div.form-group
+							label.col-sm-2.control-label(
+							for="inputToken") Gizli Sözcük
+							div.col-sm-10
+							input.form-control(
+							type="text" 
+							id="inputToken" 
+							name="token" 
+							placeholder="Gizli Sözcüğü Girin")
+						div.form-group
+							div.col-sm-offset-2.col-sm-10
+							button.btn.btn-default(
+							type="submit") Gönder
