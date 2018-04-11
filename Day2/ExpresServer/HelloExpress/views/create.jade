@@ -5,23 +5,23 @@ block content
         div.content
             h1 New User
             hr
-            form.form-horizontal(action='/users/create',method='POST')
+            form.form-horizontal(action='/list/create',method='POST')
                 div.form-group
-                    label.col-sm-2.control-label(for="name-input") Ad
+                    label.col-sm-2.control-label(for="name-input") Name
                     div.col-sm-10
-                        input.form-control(id="name-input" name="ad" placeholder="Ad giriniz")
+                        input.form-control(id="name-input" name="name" placeholder="Name")
                 div.form-group
-                    label.col-sm-2.control-label(for="lastname-input") Soyad
+                    label.col-sm-2.control-label(for="lastname-input") Lastname
                     div.col-sm-10
-                        input.form-control(id="lastname-input" name="lastname" placeholder="Soyad giriniz")
+                        input.form-control(id="lastname-input" name="lastname" placeholder="Lastname")
                 div.form-group
-                    label.col-sm-2.control-label(for="username-input") Doğum Tarihi
+                    label.col-sm-2.control-label(for="username-input") Username
                     div.col-sm-10
-                        input.form-control(id="username-input" name="username" placeholder="Doğum Tarihinizi giriniz")
+                        input.form-control(id="username-input" name="username" placeholder="Username")
                 div.form-group
-                    label.col-sm-2.control-label(for="password-input") Email Adresi
+                    label.col-sm-2.control-label(for="password-password") Password
                     div.col-sm-10
-                        input.form-control(id="password-input" name="password" placeholder="Email Adresinizi giriniz")
+                        input.form-control(id="password-password" name="password" placeholder="Password")
                 div.form-group
                     div.col-sm-offset-2.col-sm-10
-                        button.btn.btn-primary(type="submit") Kullanıcı Ekle
+                        button.btn.btn-primary(type="submit") Add User

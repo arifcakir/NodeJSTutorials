@@ -16,22 +16,15 @@ block content
                             th Password
                             th Title
                     tbody
+                       each user, i in userList
                         tr
-                            td Murat
-                            td Test
-                            td aaa
-                            td 1234
-                            td 
-                                a.btn.btn-danger.btn-xs(href="/users/delete/") Delete User
-                        each user, i in userList
-                        tr
-                            td #(user.name)
-                            td #(user.lastname)
-                            td #(user.username)
-                            td #(user.password)
+                            td #{user.name}
+                            td #{user.lastname}
+                            td #{user.username}
+                            td #{user.password}
                             td
-                                 a.btn.btn-danger.btn-xs(href="/users/delete/"+user._id) Delete User
+                                a.btn.btn-danger.btn-xs(href="/list/delete/"+user._id) Delete User
             hr
             div.row
                 div.col-md-12
-                    a.btn.btn-default(href="/users/create") New User
+                    a.btn.btn-default(href="/list/create") New User

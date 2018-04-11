@@ -1,13 +1,12 @@
 var mongoose=require("mongoose");
 
 //ornek-uygulama db nin adı
-mongoose.connect('mongodb://127.0.0.1/sampledb');
+mongoose.connect('mongodb://127.0.0.1:50000/sampledb');
 
 var Schema=mongoose.Schema;
 
 var userSchema=new Schema(
 {
-    _id:Object,
     name:String,
     lastname:String,
     username:String,
@@ -15,4 +14,4 @@ var userSchema=new Schema(
 }
 );
 
-mongoose.model('User',userSchema);
+mongoose.model('users',userSchema);
