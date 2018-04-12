@@ -1,0 +1,17 @@
+body{
+    background-color:gray;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: burlywood;
+}
+
+div{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top:200px;
+    margin: 0 auto;
+}
